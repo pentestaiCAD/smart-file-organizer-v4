@@ -8,8 +8,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-4ade80.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows-38bdf8.svg)
 ![Offline](https://img.shields.io/badge/AI-optional%20%C2%B7%20offline--first-facc15.svg)
-<!-- After you push, replace USER/REPO below to activate the CI badge -->
-<!-- ![CI](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg) -->
+[![CI](https://github.com/pentestaiCAD/smart-file-organizer-v4/actions/workflows/ci.yml/badge.svg)](https://github.com/pentestaiCAD/smart-file-organizer-v4/actions/workflows/ci.yml)
 
 </div>
 
@@ -107,16 +106,16 @@ _UNSORTED/ screenshot.png   setup (1).exe
 
 ## Install
 
-**For users** — grab `SmartFileOrganizerSetup.exe` from the [Releases](../../releases) page, run it (Next → Next → Finish). Installs per-user (no admin), first launch runs a short setup wizard.
-
-**From source**
+**Run from source** (works right away):
 
 ```bash
-git clone https://github.com/USER/REPO.git
-cd REPO
+git clone https://github.com/pentestaiCAD/smart-file-organizer-v4.git
+cd smart-file-organizer-v4
 pip install -r requirements.txt      # optional extras: PDF/Word content search
 python app/organizer_gui.py          # or double-click app/Organizer.bat
 ```
+
+**Packaged installer** — a one-file `SmartFileOrganizerSetup.exe` (Next → Next → Finish; per-user, no admin; first launch runs a short setup wizard). Build it yourself with the steps under [Development](#development), or — once a build has been attached to a [GitHub Release](../../releases) — download it there.
 
 ## Command line
 
