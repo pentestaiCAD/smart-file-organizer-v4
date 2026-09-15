@@ -1,0 +1,54 @@
+{
+  "comment": "Classification SIGNALS for Smart File Organizer 4.0. These do NOT define the folder structure (that is fixed at six top-level folders). 'types' maps a file extension to a type used for naming and routing hints. 'sensitive_*' marks credential-like files that are LEFT IN PLACE and whose contents are never read or sent to AI. 'work/personal_keywords' are filename cues that raise confidence for a life-domain bucket; anything without a clear cue stays in _UNSORTED (the app never guesses). Everything here is user-editable.",
+  "types": {
+    "installer": ["exe", "msi", "msix", "appx", "appxbundle", "dmg", "pkg"],
+    "image": ["jpg", "jpeg", "png", "gif", "bmp", "webp", "svg", "ico", "heic", "tif", "tiff"],
+    "document": ["pdf", "doc", "docx", "odt", "rtf", "pages"],
+    "spreadsheet": ["xls", "xlsx", "csv", "ods"],
+    "presentation": ["ppt", "pptx", "key", "odp"],
+    "code": ["py", "js", "ts", "tsx", "jsx", "html", "css", "json", "yaml", "yml", "ps1", "bat", "sh", "psm1", "sql", "java", "cpp", "c", "h", "go", "rs", "rb", "php"],
+    "archive": ["zip", "rar", "7z", "tar", "gz", "bz2", "xz", "iso", "tgz"],
+    "credential": ["pem", "key", "ppk", "pfx", "p12", "crt", "cer", "pub", "kdbx", "keystore", "jks", "asc", "gpg"],
+    "text": ["txt", "md", "log"],
+    "audio": ["mp3", "wav", "flac", "ogg", "m4a", "aac", "wma"],
+    "video": ["mp4", "mkv", "avi", "mov", "wmv", "webm", "m4v"],
+    "font": ["ttf", "otf", "woff", "woff2"],
+    "shortcut": ["lnk", "url"],
+    "ebook": ["epub", "mobi", "azw3"]
+  },
+  "sensitive_types": ["credential"],
+  "sensitive_name_patterns": [
+    "accesskey", "access_key", "secret", "credential", "password", "passwd",
+    "apikey", "api_key", "private_key", "privatekey", "wallet", "seed_phrase",
+    "seedphrase", "mnemonic", "id_rsa", "id_ed25519", "_ed25519", "_rsa"
+  ],
+  "screenshot_pattern": "screen ?shot|screencap|scrshot",
+  "work_keywords": [
+    "resume", "cv", "cover letter", "portfolio", "invoice", "receipt", "contract",
+    "agreement", "statement", "report", "proposal", "offer letter", "paystub",
+    "payslip", "tax", "w2", "w-2", "1099", "nda", "spec", "meeting", "minutes",
+    "budget", "timesheet", "deck", "slides", "handoff", "readme"
+  ],
+  "personal_keywords": [
+    "photo", "selfie", "vacation", "holiday", "family", "wedding", "birthday",
+    "recipe", "ticket", "boarding", "itinerary", "medical", "prescription",
+    "insurance", "warranty", "lease", "rent", "mortgage"
+  ],
+  "subfolder_hints": {
+    "invoice": "Invoices",
+    "receipt": "Receipts",
+    "resume": "Resumes",
+    "cv": "Resumes",
+    "portfolio": "Portfolio",
+    "contract": "Contracts",
+    "agreement": "Contracts",
+    "statement": "Statements",
+    "tax": "Tax",
+    "report": "Reports",
+    "proposal": "Proposals",
+    "photo": "Photos",
+    "recipe": "Recipes",
+    "medical": "Medical",
+    "insurance": "Insurance"
+  }
+}

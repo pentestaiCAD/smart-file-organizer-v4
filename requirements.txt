@@ -1,0 +1,12 @@
+# Smart File Organizer 4.0 — dependencies
+#
+# The app RUNS with the Python standard library alone (tkinter, sqlite3 with
+# FTS5, urllib). These extras only widen what `Find` can read inside files;
+# everything degrades gracefully if they're missing.
+
+# Optional runtime — content search for PDF and Word files:
+pypdf>=5
+python-docx>=1
+
+# Build only — packaging the installer:
+pyinstaller>=6

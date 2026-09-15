@@ -1,0 +1,26 @@
+# Build artifacts (ship these via GitHub Releases, not the repo)
+build/dist/
+build/dist2/
+build/work/
+build/output/
+build/*.log
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
